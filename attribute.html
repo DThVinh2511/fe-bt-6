@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        a[target] {
+            background-color: black;
+        }
+        a[target="_blank"] {
+            color: white;
+        }
+        a[title~="website"] {
+            border: 1px solid red;
+        }
+        a[title|="website"] {
+            background-color: green;
+        }
+        a[title^="site"] {
+            background-color: green;
+        }
+        a[title$="website"] {
+            background-color: green;
+        }
+        a[title*="goo"] {
+            background-color: blue;
+        }
+    </style>
+
+
+
+    <a href="https://www.google.com.vn/?hl=vi" target="_blank"
+    title="website google">google</a>
+    <a href="https://www.facebook.com/" target="_blank" title="website facebook">facebook</a>
+    <a href="https://www.youtube.com/" target="_blank" title="website youtube">youtube</a>
+</body>
+</html>
